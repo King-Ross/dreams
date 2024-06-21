@@ -1,0 +1,30 @@
+{
+    "name": "stella/lms",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Muhereza Joel",
+            "email": "muherezajoel40@gmail.com"
+        }
+    ],
+    
+
+    "autoload": {
+        "psr-4": {
+            "<?php echo basename(__DIR__); ?>\\": "__DIR__"
+        }
+    },
+    "require": {
+        "jenssegers/blade": "^1.1",
+        "vlucas/phpdotenv": "^4.3",
+        "tecnickcom/tcpdf": "^6.7",
+        "nesbot/carbon": "^1.39",
+        "phpoffice/phpword": "^0.18.3",
+        "phpoffice/phpspreadsheet": "^1.8"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
+}

@@ -1,0 +1,8 @@
+Options -Indexes
+RewriteEngine On
+
+# If the requested file or directory does not exist, rewrite it to your PHP script
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteBase /dreams/
+RewriteRule ^(.*)$ index.php [QSA,L]
